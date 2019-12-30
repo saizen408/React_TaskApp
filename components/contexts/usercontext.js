@@ -1,8 +1,8 @@
-import React, { createContext } from 'react';
-import { useAuthReducer } from '../hooks/useAuthReducer';
-import authReducer from '../reducers/auth.reducer';
+import React, { createContext } from "react";
+import { useAuthReducer } from "../hooks/useAuthReducer";
+import authReducer from "../reducers/authreducer";
 
-const defaultToken = { token: '', error: false };
+const defaultToken = { token: "", error: false };
 
 export const UserContext = createContext();
 export const AuthenticateContext = createContext();

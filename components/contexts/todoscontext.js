@@ -1,6 +1,6 @@
 import React, { createContext, useContext } from "react";
 import { useDBReducer } from "../hooks/useDBReducer";
-import todoReducer from "../reducers/todo.reducer";
+import todoReducer from "../reducers/todoreducer";
 
 const defaultTodos = [
   {

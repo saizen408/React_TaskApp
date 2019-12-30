@@ -88,7 +88,7 @@ module.exports =
 /******/
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 4);
+/******/ 	return __webpack_require__(__webpack_require__.s = 5);
 /******/ })
 /************************************************************************/
 /******/ ({
@@ -124,7 +124,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var notistack__WEBPACK_IMPORTED_MODULE_10___default = /*#__PURE__*/__webpack_require__.n(notistack__WEBPACK_IMPORTED_MODULE_10__);
 /* harmony import */ var _material_ui_core_ListItemSecondaryAction__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! @material-ui/core/ListItemSecondaryAction */ "@material-ui/core/ListItemSecondaryAction");
 /* harmony import */ var _material_ui_core_ListItemSecondaryAction__WEBPACK_IMPORTED_MODULE_11___default = /*#__PURE__*/__webpack_require__.n(_material_ui_core_ListItemSecondaryAction__WEBPACK_IMPORTED_MODULE_11__);
-/* harmony import */ var _contexts_todos_context__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ./contexts/todos.context */ "./components/contexts/todos.context.js");
+/* harmony import */ var _contexts_todoscontext__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ./contexts/todoscontext */ "./components/contexts/todoscontext.js");
 /* harmony import */ var _contexts_LanguageContext__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ./contexts/LanguageContext */ "./components/contexts/LanguageContext.js");
 /* harmony import */ var _material_ui_core__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! @material-ui/core */ "@material-ui/core");
 /* harmony import */ var _material_ui_core__WEBPACK_IMPORTED_MODULE_14___default = /*#__PURE__*/__webpack_require__.n(_material_ui_core__WEBPACK_IMPORTED_MODULE_14__);
@@ -157,7 +157,7 @@ const DraggableTodo = Object(react_sortable_hoc__WEBPACK_IMPORTED_MODULE_1__["So
   sorted,
   tasksDBIdx
 }) => {
-  const dispatch = Object(react__WEBPACK_IMPORTED_MODULE_0__["useContext"])(_contexts_todos_context__WEBPACK_IMPORTED_MODULE_12__["DispatchContext"]);
+  const dispatch = Object(react__WEBPACK_IMPORTED_MODULE_0__["useContext"])(_contexts_todoscontext__WEBPACK_IMPORTED_MODULE_12__["DispatchContext"]);
   const {
     language
   } = Object(react__WEBPACK_IMPORTED_MODULE_0__["useContext"])(_contexts_LanguageContext__WEBPACK_IMPORTED_MODULE_13__["LanguageContext"]);
@@ -304,7 +304,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _hooks_useInputState__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./hooks/useInputState */ "./components/hooks/useInputState.js");
 /* harmony import */ var _material_ui_core_TextField__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @material-ui/core/TextField */ "@material-ui/core/TextField");
 /* harmony import */ var _material_ui_core_TextField__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_material_ui_core_TextField__WEBPACK_IMPORTED_MODULE_2__);
-/* harmony import */ var _contexts_todos_context__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./contexts/todos.context */ "./components/contexts/todos.context.js");
+/* harmony import */ var _contexts_todoscontext__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./contexts/todoscontext */ "./components/contexts/todoscontext.js");
 /* harmony import */ var notistack__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! notistack */ "notistack");
 /* harmony import */ var notistack__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(notistack__WEBPACK_IMPORTED_MODULE_4__);
 var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
@@ -321,7 +321,7 @@ function EditTodoForm({
   sorted,
   tasksDBIdx
 }) {
-  const dispatch = Object(react__WEBPACK_IMPORTED_MODULE_0__["useContext"])(_contexts_todos_context__WEBPACK_IMPORTED_MODULE_3__["DispatchContext"]);
+  const dispatch = Object(react__WEBPACK_IMPORTED_MODULE_0__["useContext"])(_contexts_todoscontext__WEBPACK_IMPORTED_MODULE_3__["DispatchContext"]);
   const [value, handleChange, reset] = Object(_hooks_useInputState__WEBPACK_IMPORTED_MODULE_1__["default"])(description);
   const {
     enqueueSnackbar
@@ -385,7 +385,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _material_ui_core_Paper__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @material-ui/core/Paper */ "@material-ui/core/Paper");
 /* harmony import */ var _material_ui_core_Paper__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_material_ui_core_Paper__WEBPACK_IMPORTED_MODULE_2__);
 /* harmony import */ var _hooks_useInputState__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./hooks/useInputState */ "./components/hooks/useInputState.js");
-/* harmony import */ var _contexts_todos_context__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./contexts/todos.context */ "./components/contexts/todos.context.js");
+/* harmony import */ var _contexts_todoscontext__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./contexts/todoscontext */ "./components/contexts/todoscontext.js");
 /* harmony import */ var _contexts_LanguageContext__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./contexts/LanguageContext */ "./components/contexts/LanguageContext.js");
 /* harmony import */ var _material_ui_core__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! @material-ui/core */ "@material-ui/core");
 /* harmony import */ var _material_ui_core__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(_material_ui_core__WEBPACK_IMPORTED_MODULE_6__);
@@ -417,7 +417,7 @@ var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 
 function TodoForm() {
   const [value, handleChange, reset] = Object(_hooks_useInputState__WEBPACK_IMPORTED_MODULE_3__["default"])("");
-  const dispatch = Object(react__WEBPACK_IMPORTED_MODULE_0__["useContext"])(_contexts_todos_context__WEBPACK_IMPORTED_MODULE_4__["DispatchContext"]);
+  const dispatch = Object(react__WEBPACK_IMPORTED_MODULE_0__["useContext"])(_contexts_todoscontext__WEBPACK_IMPORTED_MODULE_4__["DispatchContext"]);
   const {
     language
   } = Object(react__WEBPACK_IMPORTED_MODULE_0__["useContext"])(_contexts_LanguageContext__WEBPACK_IMPORTED_MODULE_5__["LanguageContext"]);
@@ -830,10 +830,10 @@ function ThemeProvider(props) {
 
 /***/ }),
 
-/***/ "./components/contexts/todos.context.js":
-/*!**********************************************!*\
-  !*** ./components/contexts/todos.context.js ***!
-  \**********************************************/
+/***/ "./components/contexts/todoscontext.js":
+/*!*********************************************!*\
+  !*** ./components/contexts/todoscontext.js ***!
+  \*********************************************/
 /*! exports provided: TodosContext, DispatchContext, TodosProvider */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -845,7 +845,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var _hooks_useDBReducer__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../hooks/useDBReducer */ "./components/hooks/useDBReducer.js");
-/* harmony import */ var _reducers_todo_reducer__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../reducers/todo.reducer */ "./components/reducers/todo.reducer.js");
+/* harmony import */ var _reducers_todoreducer__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../reducers/todoreducer */ "./components/reducers/todoreducer.js");
 var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 
 
@@ -864,7 +864,7 @@ const defaultTodos = [{
 const TodosContext = Object(react__WEBPACK_IMPORTED_MODULE_0__["createContext"])();
 const DispatchContext = Object(react__WEBPACK_IMPORTED_MODULE_0__["createContext"])();
 function TodosProvider(props) {
-  const [todos, dispatch] = Object(_hooks_useDBReducer__WEBPACK_IMPORTED_MODULE_1__["useDBReducer"])(defaultTodos, _reducers_todo_reducer__WEBPACK_IMPORTED_MODULE_2__["default"]);
+  const [todos, dispatch] = Object(_hooks_useDBReducer__WEBPACK_IMPORTED_MODULE_1__["useDBReducer"])(defaultTodos, _reducers_todoreducer__WEBPACK_IMPORTED_MODULE_2__["default"]);
   return __jsx(TodosContext.Provider, {
     value: todos
   }, __jsx(DispatchContext.Provider, {
@@ -1032,10 +1032,10 @@ function useToggle(initialVal = false) {
 
 /***/ }),
 
-/***/ "./components/reducers/todo.reducer.js":
-/*!*********************************************!*\
-  !*** ./components/reducers/todo.reducer.js ***!
-  \*********************************************/
+/***/ "./components/reducers/todoreducer.js":
+/*!********************************************!*\
+  !*** ./components/reducers/todoreducer.js ***!
+  \********************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -1456,7 +1456,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _material_ui_core_Grid__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(_material_ui_core_Grid__WEBPACK_IMPORTED_MODULE_5__);
 /* harmony import */ var _components_handleAuthSSR__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../components/handleAuthSSR */ "./components/handleAuthSSR.js");
 /* harmony import */ var _components_contexts_ThemeContext__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../components/contexts/ThemeContext */ "./components/contexts/ThemeContext.js");
-/* harmony import */ var _components_contexts_todos_context__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ../components/contexts/todos.context */ "./components/contexts/todos.context.js");
+/* harmony import */ var _components_contexts_todoscontext__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ../components/contexts/todoscontext */ "./components/contexts/todoscontext.js");
 
 var __jsx = react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement;
 
@@ -1492,7 +1492,7 @@ function TodoAppPage(props) {
     xs: 11,
     md: 8,
     lg: 4
-  }, __jsx(_components_contexts_todos_context__WEBPACK_IMPORTED_MODULE_8__["TodosProvider"], null, __jsx(_components_TodoForm__WEBPACK_IMPORTED_MODULE_3__["default"], Object(_babel_runtime_corejs2_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({}, props, {
+  }, __jsx(_components_contexts_todoscontext__WEBPACK_IMPORTED_MODULE_8__["TodosProvider"], null, __jsx(_components_TodoForm__WEBPACK_IMPORTED_MODULE_3__["default"], Object(_babel_runtime_corejs2_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({}, props, {
     clicked: props.clicked
   })), __jsx(_components_TodoList__WEBPACK_IMPORTED_MODULE_2__["default"], Object(_babel_runtime_corejs2_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({}, props, {
     clicked: props.clicked
@@ -1513,7 +1513,7 @@ TodoAppPage.getInitialProps = async ctx => {
 
 /***/ }),
 
-/***/ 4:
+/***/ 5:
 /*!************************************!*\
   !*** multi ./pages/TodoAppPage.js ***!
   \************************************/

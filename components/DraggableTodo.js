@@ -10,7 +10,7 @@ import EditIcon from "@material-ui/icons/Edit";
 import Switch from "@material-ui/core/Switch";
 import { useSnackbar } from "notistack";
 import ListItemSecondaryAction from "@material-ui/core/ListItemSecondaryAction";
-import { DispatchContext } from "./contexts/todos.context";
+import { DispatchContext } from "./contexts/todoscontext";
 import { LanguageContext } from "./contexts/LanguageContext";
 import { Paper } from "@material-ui/core";
 import moment from "moment";

@@ -407,10 +407,10 @@ function ThemeProvider(props) {
 
 /***/ }),
 
-/***/ "./components/contexts/todos.context.js":
-/*!**********************************************!*\
-  !*** ./components/contexts/todos.context.js ***!
-  \**********************************************/
+/***/ "./components/contexts/todoscontext.js":
+/*!*********************************************!*\
+  !*** ./components/contexts/todoscontext.js ***!
+  \*********************************************/
 /*! exports provided: TodosContext, DispatchContext, TodosProvider */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -423,7 +423,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
 /* harmony import */ var _hooks_useDBReducer__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../hooks/useDBReducer */ "./components/hooks/useDBReducer.js");
-/* harmony import */ var _reducers_todo_reducer__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../reducers/todo.reducer */ "./components/reducers/todo.reducer.js");
+/* harmony import */ var _reducers_todoreducer__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../reducers/todoreducer */ "./components/reducers/todoreducer.js");
 
 var __jsx = react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement;
 
@@ -443,7 +443,7 @@ var defaultTodos = [{
 var TodosContext = Object(react__WEBPACK_IMPORTED_MODULE_1__["createContext"])();
 var DispatchContext = Object(react__WEBPACK_IMPORTED_MODULE_1__["createContext"])();
 function TodosProvider(props) {
-  var _useDBReducer = Object(_hooks_useDBReducer__WEBPACK_IMPORTED_MODULE_2__["useDBReducer"])(defaultTodos, _reducers_todo_reducer__WEBPACK_IMPORTED_MODULE_3__["default"]),
+  var _useDBReducer = Object(_hooks_useDBReducer__WEBPACK_IMPORTED_MODULE_2__["useDBReducer"])(defaultTodos, _reducers_todoreducer__WEBPACK_IMPORTED_MODULE_3__["default"]),
       _useDBReducer2 = Object(_babel_runtime_corejs2_helpers_esm_slicedToArray__WEBPACK_IMPORTED_MODULE_0__["default"])(_useDBReducer, 2),
       todos = _useDBReducer2[0],
       dispatch = _useDBReducer2[1];
@@ -457,10 +457,10 @@ function TodosProvider(props) {
 
 /***/ }),
 
-/***/ "./components/contexts/user.context.js":
-/*!*********************************************!*\
-  !*** ./components/contexts/user.context.js ***!
-  \*********************************************/
+/***/ "./components/contexts/usercontext.js":
+/*!********************************************!*\
+  !*** ./components/contexts/usercontext.js ***!
+  \********************************************/
 /*! exports provided: UserContext, AuthenticateContext, UserProvider */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -473,20 +473,20 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
 /* harmony import */ var _hooks_useAuthReducer__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../hooks/useAuthReducer */ "./components/hooks/useAuthReducer.js");
-/* harmony import */ var _reducers_auth_reducer__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../reducers/auth.reducer */ "./components/reducers/auth.reducer.js");
+/* harmony import */ var _reducers_authreducer__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../reducers/authreducer */ "./components/reducers/authreducer.js");
 
 var __jsx = react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement;
 
 
 
 var defaultToken = {
-  token: '',
+  token: "",
   error: false
 };
 var UserContext = Object(react__WEBPACK_IMPORTED_MODULE_1__["createContext"])();
 var AuthenticateContext = Object(react__WEBPACK_IMPORTED_MODULE_1__["createContext"])();
 function UserProvider(props) {
-  var _useAuthReducer = Object(_hooks_useAuthReducer__WEBPACK_IMPORTED_MODULE_2__["useAuthReducer"])(_reducers_auth_reducer__WEBPACK_IMPORTED_MODULE_3__["default"], defaultToken),
+  var _useAuthReducer = Object(_hooks_useAuthReducer__WEBPACK_IMPORTED_MODULE_2__["useAuthReducer"])(_reducers_authreducer__WEBPACK_IMPORTED_MODULE_3__["default"], defaultToken),
       _useAuthReducer2 = Object(_babel_runtime_corejs2_helpers_esm_slicedToArray__WEBPACK_IMPORTED_MODULE_0__["default"])(_useAuthReducer, 2),
       token = _useAuthReducer2[0],
       authenticate = _useAuthReducer2[1];
@@ -695,10 +695,10 @@ function useToggle() {
 
 /***/ }),
 
-/***/ "./components/reducers/auth.reducer.js":
-/*!*********************************************!*\
-  !*** ./components/reducers/auth.reducer.js ***!
-  \*********************************************/
+/***/ "./components/reducers/authreducer.js":
+/*!********************************************!*\
+  !*** ./components/reducers/authreducer.js ***!
+  \********************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -783,10 +783,10 @@ var authReducer = function authReducer(state, action) {
 
 /***/ }),
 
-/***/ "./components/reducers/todo.reducer.js":
-/*!*********************************************!*\
-  !*** ./components/reducers/todo.reducer.js ***!
-  \*********************************************/
+/***/ "./components/reducers/todoreducer.js":
+/*!********************************************!*\
+  !*** ./components/reducers/todoreducer.js ***!
+  \********************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -39960,8 +39960,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _components_PageContent__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../components/PageContent */ "./components/PageContent.js");
 /* harmony import */ var _components_contexts_ThemeContext__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ../components/contexts/ThemeContext */ "./components/contexts/ThemeContext.js");
 /* harmony import */ var _components_contexts_LanguageContext__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ../components/contexts/LanguageContext */ "./components/contexts/LanguageContext.js");
-/* harmony import */ var _components_contexts_todos_context__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ../components/contexts/todos.context */ "./components/contexts/todos.context.js");
-/* harmony import */ var _components_contexts_user_context__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ../components/contexts/user.context */ "./components/contexts/user.context.js");
+/* harmony import */ var _components_contexts_todoscontext__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ../components/contexts/todoscontext */ "./components/contexts/todoscontext.js");
+/* harmony import */ var _components_contexts_usercontext__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ../components/contexts/usercontext */ "./components/contexts/usercontext.js");
 /* harmony import */ var notistack__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! notistack */ "./node_modules/notistack/build/index.js");
 /* harmony import */ var notistack__WEBPACK_IMPORTED_MODULE_12___default = /*#__PURE__*/__webpack_require__.n(notistack__WEBPACK_IMPORTED_MODULE_12__);
 /* harmony import */ var _material_ui_core_styles__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! @material-ui/core/styles */ "./node_modules/@material-ui/core/esm/styles/index.js");
@@ -40023,7 +40023,7 @@ function (_App) {
           success: "✅",
           error: "⚠️"
         }
-      }, __jsx(_components_PageContent__WEBPACK_IMPORTED_MODULE_7__["default"], null, __jsx(_components_contexts_user_context__WEBPACK_IMPORTED_MODULE_11__["UserProvider"], null, __jsx(_components_Navbar__WEBPACK_IMPORTED_MODULE_15__["default"], pageProps), __jsx(_components_contexts_SortedContext__WEBPACK_IMPORTED_MODULE_16__["SortedProvider"], null, __jsx(_components_contexts_todos_context__WEBPACK_IMPORTED_MODULE_10__["TodosProvider"], null, __jsx(Component, pageProps)))))))));
+      }, __jsx(_components_PageContent__WEBPACK_IMPORTED_MODULE_7__["default"], null, __jsx(_components_contexts_usercontext__WEBPACK_IMPORTED_MODULE_11__["UserProvider"], null, __jsx(_components_Navbar__WEBPACK_IMPORTED_MODULE_15__["default"], pageProps), __jsx(_components_contexts_SortedContext__WEBPACK_IMPORTED_MODULE_16__["SortedProvider"], null, __jsx(_components_contexts_todoscontext__WEBPACK_IMPORTED_MODULE_10__["TodosProvider"], null, __jsx(Component, pageProps)))))))));
     }
   }]);
 

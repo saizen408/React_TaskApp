@@ -29,7 +29,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _material_ui_core_styles_withStyles__WEBPACK_IMPORTED_MODULE_14___default = /*#__PURE__*/__webpack_require__.n(_material_ui_core_styles_withStyles__WEBPACK_IMPORTED_MODULE_14__);
 /* harmony import */ var _styles_FormStyles__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! ./styles/FormStyles */ "./components/styles/FormStyles.js");
 /* harmony import */ var _contexts_LanguageContext__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(/*! ./contexts/LanguageContext */ "./components/contexts/LanguageContext.js");
-/* harmony import */ var _contexts_user_context__WEBPACK_IMPORTED_MODULE_17__ = __webpack_require__(/*! ./contexts/user.context */ "./components/contexts/user.context.js");
+/* harmony import */ var _contexts_usercontext__WEBPACK_IMPORTED_MODULE_17__ = __webpack_require__(/*! ./contexts/usercontext */ "./components/contexts/usercontext.js");
 /* harmony import */ var _hooks_useInputState__WEBPACK_IMPORTED_MODULE_18__ = __webpack_require__(/*! ./hooks/useInputState */ "./components/hooks/useInputState.js");
 /* harmony import */ var _styles_cubeSpinner__WEBPACK_IMPORTED_MODULE_19__ = __webpack_require__(/*! ./styles/cubeSpinner */ "./components/styles/cubeSpinner.js");
 /* harmony import */ var notistack__WEBPACK_IMPORTED_MODULE_20__ = __webpack_require__(/*! notistack */ "./node_modules/notistack/build/index.js");
@@ -64,8 +64,8 @@ function Form(props) {
       language = _useContext.language,
       changeLanguage = _useContext.changeLanguage;
 
-  var token = Object(react__WEBPACK_IMPORTED_MODULE_1__["useContext"])(_contexts_user_context__WEBPACK_IMPORTED_MODULE_17__["UserContext"]);
-  var authenticate = Object(react__WEBPACK_IMPORTED_MODULE_1__["useContext"])(_contexts_user_context__WEBPACK_IMPORTED_MODULE_17__["AuthenticateContext"]);
+  var token = Object(react__WEBPACK_IMPORTED_MODULE_1__["useContext"])(_contexts_usercontext__WEBPACK_IMPORTED_MODULE_17__["UserContext"]);
+  var authenticate = Object(react__WEBPACK_IMPORTED_MODULE_1__["useContext"])(_contexts_usercontext__WEBPACK_IMPORTED_MODULE_17__["AuthenticateContext"]);
   var classes = props.classes;
   var _words$language = _words__WEBPACK_IMPORTED_MODULE_21__["words"][language],
       email = _words$language.email,
@@ -252,10 +252,10 @@ function LanguageProvider(props) {
 
 /***/ }),
 
-/***/ "./components/contexts/user.context.js":
-/*!*********************************************!*\
-  !*** ./components/contexts/user.context.js ***!
-  \*********************************************/
+/***/ "./components/contexts/usercontext.js":
+/*!********************************************!*\
+  !*** ./components/contexts/usercontext.js ***!
+  \********************************************/
 /*! exports provided: UserContext, AuthenticateContext, UserProvider */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -268,20 +268,20 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
 /* harmony import */ var _hooks_useAuthReducer__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../hooks/useAuthReducer */ "./components/hooks/useAuthReducer.js");
-/* harmony import */ var _reducers_auth_reducer__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../reducers/auth.reducer */ "./components/reducers/auth.reducer.js");
+/* harmony import */ var _reducers_authreducer__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../reducers/authreducer */ "./components/reducers/authreducer.js");
 
 var __jsx = react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement;
 
 
 
 var defaultToken = {
-  token: '',
+  token: "",
   error: false
 };
 var UserContext = Object(react__WEBPACK_IMPORTED_MODULE_1__["createContext"])();
 var AuthenticateContext = Object(react__WEBPACK_IMPORTED_MODULE_1__["createContext"])();
 function UserProvider(props) {
-  var _useAuthReducer = Object(_hooks_useAuthReducer__WEBPACK_IMPORTED_MODULE_2__["useAuthReducer"])(_reducers_auth_reducer__WEBPACK_IMPORTED_MODULE_3__["default"], defaultToken),
+  var _useAuthReducer = Object(_hooks_useAuthReducer__WEBPACK_IMPORTED_MODULE_2__["useAuthReducer"])(_reducers_authreducer__WEBPACK_IMPORTED_MODULE_3__["default"], defaultToken),
       _useAuthReducer2 = Object(_babel_runtime_corejs2_helpers_esm_slicedToArray__WEBPACK_IMPORTED_MODULE_0__["default"])(_useAuthReducer, 2),
       token = _useAuthReducer2[0],
       authenticate = _useAuthReducer2[1];
@@ -351,10 +351,10 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
-/***/ "./components/reducers/auth.reducer.js":
-/*!*********************************************!*\
-  !*** ./components/reducers/auth.reducer.js ***!
-  \*********************************************/
+/***/ "./components/reducers/authreducer.js":
+/*!********************************************!*\
+  !*** ./components/reducers/authreducer.js ***!
+  \********************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -46811,7 +46811,7 @@ function (_Component) {
 
 /***/ }),
 
-/***/ 0:
+/***/ 1:
 /*!*******************************************************************************************************************************************************************!*\
   !*** multi next-client-pages-loader?page=%2F&absolutePagePath=%2FUsers%2Fericowusu%2FDocuments%2FReact%20_Course_Projects%2FNext%2Ffirst-next%2Fpages%2Findex.js ***!
   \*******************************************************************************************************************************************************************/
@@ -46834,5 +46834,5 @@ module.exports = dll_ef0ff7c60362f24a921f;
 
 /***/ })
 
-},[[0,"static/runtime/webpack.js"]]]);
+},[[1,"static/runtime/webpack.js"]]]);
 //# sourceMappingURL=index.js.map
