@@ -1,32 +1,33 @@
 {
-  "devFiles": [
-    "static/development/dll/dll_d6a88dbe3071bd165157.js",
-    "static/development/dll/dll_d6a88dbe3071bd165157.js.map"
-  ],
+  "devFiles": [],
   "pages": {
     "/": [
-      "static/runtime/webpack.js",
-      "static/runtime/main.js"
+      "static/runtime/webpack-08f7b238829422e3b9b2.js",
+      "static/chunks/commons.4946b2c4c8a394fb5fb3.js",
+      "static/runtime/main-f7c71882c4cfc87d32da.js"
     ],
     "/TodoAppPage": [
-      "static/runtime/webpack.js",
-      "static/runtime/main.js"
+      "static/runtime/webpack-08f7b238829422e3b9b2.js",
+      "static/chunks/commons.4946b2c4c8a394fb5fb3.js",
+      "static/runtime/main-f7c71882c4cfc87d32da.js"
     ],
     "/_app": [
-      "static/runtime/webpack.js",
-      "static/runtime/main.js"
+      "static/runtime/webpack-08f7b238829422e3b9b2.js",
+      "static/chunks/commons.4946b2c4c8a394fb5fb3.js",
+      "static/runtime/main-f7c71882c4cfc87d32da.js"
     ],
     "/_error": [
-      "static/runtime/webpack.js",
-      "static/runtime/main.js"
+      "static/runtime/webpack-08f7b238829422e3b9b2.js",
+      "static/chunks/commons.4946b2c4c8a394fb5fb3.js",
+      "static/runtime/main-f7c71882c4cfc87d32da.js"
     ],
     "/_polyfills": [
-      "static/runtime/polyfills.js",
-      "static/runtime/polyfills.js.map"
+      "static/runtime/polyfills-a591b2980a0968e30eae.js"
     ],
     "/index": [
-      "static/runtime/webpack.js",
-      "static/runtime/main.js"
+      "static/runtime/webpack-08f7b238829422e3b9b2.js",
+      "static/chunks/commons.4946b2c4c8a394fb5fb3.js",
+      "static/runtime/main-f7c71882c4cfc87d32da.js"
     ]
   }
 }

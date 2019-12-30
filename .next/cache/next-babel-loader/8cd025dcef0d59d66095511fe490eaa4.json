@@ -1,0 +1,1 @@
+{"ast":null,"code":"import { useReducer } from 'react';\n\nfunction useAuthReducer(authReducer, token) {\n  const {\n    0: state,\n    1: authenticate\n  } = useReducer(authReducer, token);\n  return [state, authenticate];\n}\n\nexport { useAuthReducer };","map":null,"metadata":{},"sourceType":"module"}

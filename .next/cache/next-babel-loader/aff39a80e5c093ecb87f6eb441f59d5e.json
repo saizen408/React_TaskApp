@@ -1,0 +1,1 @@
+{"ast":null,"code":"import { useState } from 'react';\nexport default (initialVal => {\n  const {\n    0: value,\n    1: setValue\n  } = useState(initialVal);\n\n  const handleChange = e => {\n    setValue(e.target.value);\n  };\n\n  const reset = () => {\n    setValue('');\n  };\n\n  return [value, handleChange, reset];\n});","map":null,"metadata":{},"sourceType":"module"}
