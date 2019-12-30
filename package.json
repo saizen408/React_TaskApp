@@ -1,12 +1,14 @@
 {
-  "name": "first-next",
+  "name": "React_TaskApp",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev": "node server2.js",
+    "dev": "next",
     "build": "next build",
-    "start": "NODE_ENV=production node server2.js"
+    "start": "next start",
+    "export": "next export",
+    "deploy": "rm -rf node_modules/.cache && rimraf out && next build && next export && touch out/.nojekyll && gh-pages -d out"
   },
   "keywords": [],
   "author": "",
@@ -29,5 +31,9 @@
     "react-sortable-hoc": "^1.10.1",
     "uuid": "^3.3.3"
   },
-  "devDependencies": {}
+  "devDependencies": {
+    "babel-plugin-transform-define": "^2.0.0",
+    "gh-pages": "^2.1.1",
+    "rimraf": "^3.0.0"
+  }
 }
