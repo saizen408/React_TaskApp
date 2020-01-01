@@ -9,5 +9,5 @@ Dark Mode and Language Settings:
 
 Drag and Drop tasks: 
 
-! [Imgur](https://i.imgur.com/4HvfmaP.png)
+![Imgur](https://i.imgur.com/4HvfmaP.png)
 
