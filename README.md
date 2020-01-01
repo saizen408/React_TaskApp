@@ -6,7 +6,7 @@ Dark Mode and Language Settings:
 
 
 [!Imgur](https://i.imgur.com/TCukA0I.gifv)
-<img src="https://imgur.com/TCukA0I" width="500 />
+<img src="https://imgur.com/TCukA0I.gifv" width="500 />
 
 Drag and Drop tasks: 
 
