@@ -14,7 +14,6 @@ function useDBReducer(defaultVal, todoReducer) {
     }
     return val;
   });
-  console.log(state);
   return [state, dispatch];
 }
 

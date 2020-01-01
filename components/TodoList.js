@@ -3,7 +3,6 @@ import DraggableTodoList from "./DraggableTodoList";
 import { withSortedContext } from "./contexts/SortedContext";
 import { withCookies, Cookies } from "react-cookie";
 const cookies = new Cookies();
-import uuid from "uuid/v4";
 
 class TodoList extends PureComponent {
   constructor(props) {
@@ -17,9 +16,8 @@ class TodoList extends PureComponent {
   onSortEnd = ({ oldIndex, newIndex }) => {
     const { tasks, prevArr } = this.state;
 
-    console.log("before sort: ", prevArr);
     if (prevArr.length === 0) {
-      var arr = cookies.get("tasks");
+      var arr = cookies.get("tasks") || this.props.posts;
       //if prevArr is same size as state.tasks change nothing
     } else if (prevArr.length === tasks.length) {
       var arr = prevArr;
@@ -47,21 +45,18 @@ class TodoList extends PureComponent {
       0,
       arr.splice(oldIndex, 1)[0]
     );
-    console.log("after sort: ", arr);
     this.setState(
       {
         tasks: arr,
         prevArr: arr
       },
       cookies.set("tasks", this.state.tasks),
-      console.log("ping!!!"),
       (this.props.sortedContext.updateState = false)
     );
   };
 
   componentDidUpdate(prevState) {
     if (prevState.tasks !== this.state.tasks) {
-      console.log("comp did update, set tasks!");
       cookies.set("tasks", this.state.tasks);
     }
     // if (this.state.tasks.length === 1) {
@@ -82,7 +77,6 @@ class TodoList extends PureComponent {
     if (props.sortedContext.updateState) {
       props.sortedContext.updateState = false;
       const { type, id, todo } = props.sortedContext.type;
-      console.log("props.sortedContext: ", id);
       const { tasks } = state;
       // const taskId = cookies.get("taskId");
       // cookies.set("tasks", tasks);
@@ -138,7 +132,7 @@ class TodoList extends PureComponent {
       return (
         <DraggableTodoList
           axis="y"
-          distance={20}
+          useDragHandle
           onSortEnd={this.onSortEnd}
           posts={tasks}
           tasksDB={posts}

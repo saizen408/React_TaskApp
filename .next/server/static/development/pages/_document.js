@@ -1493,11 +1493,13 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/defineProperty */ "./node_modules/@babel/runtime-corejs2/helpers/esm/defineProperty.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! react */ "react");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_7___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_7__);
-/* harmony import */ var next_document__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! next/document */ "./node_modules/next/document.js");
-/* harmony import */ var next_document__WEBPACK_IMPORTED_MODULE_8___default = /*#__PURE__*/__webpack_require__.n(next_document__WEBPACK_IMPORTED_MODULE_8__);
-/* harmony import */ var _material_ui_styles__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! @material-ui/styles */ "@material-ui/styles");
-/* harmony import */ var _material_ui_styles__WEBPACK_IMPORTED_MODULE_9___default = /*#__PURE__*/__webpack_require__.n(_material_ui_styles__WEBPACK_IMPORTED_MODULE_9__);
-/* harmony import */ var _components_styles_theme__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ../components/styles/theme */ "./components/styles/theme.js");
+/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! react-router-dom */ "react-router-dom");
+/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_8___default = /*#__PURE__*/__webpack_require__.n(react_router_dom__WEBPACK_IMPORTED_MODULE_8__);
+/* harmony import */ var next_document__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! next/document */ "./node_modules/next/document.js");
+/* harmony import */ var next_document__WEBPACK_IMPORTED_MODULE_9___default = /*#__PURE__*/__webpack_require__.n(next_document__WEBPACK_IMPORTED_MODULE_9__);
+/* harmony import */ var _material_ui_styles__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! @material-ui/styles */ "@material-ui/styles");
+/* harmony import */ var _material_ui_styles__WEBPACK_IMPORTED_MODULE_10___default = /*#__PURE__*/__webpack_require__.n(_material_ui_styles__WEBPACK_IMPORTED_MODULE_10__);
+/* harmony import */ var _components_styles_theme__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ../components/styles/theme */ "./components/styles/theme.js");
 
 
 
@@ -1515,35 +1517,36 @@ function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { va
 
 
 
-class MyDocument extends next_document__WEBPACK_IMPORTED_MODULE_8___default.a {
+
+class MyDocument extends next_document__WEBPACK_IMPORTED_MODULE_9___default.a {
   render() {
     return __jsx("html", {
       lang: "en"
-    }, __jsx(next_document__WEBPACK_IMPORTED_MODULE_8__["Head"], null, __jsx("meta", {
+    }, __jsx(next_document__WEBPACK_IMPORTED_MODULE_9__["Head"], null, __jsx("meta", {
       charSet: "utf-8"
     }), __jsx("meta", {
       name: "viewport",
       content: "minimum-scale=1, initial-scale=1, width=device-width, shrink-to-fit=no"
     }), __jsx("meta", {
       name: "theme-color",
-      content: _components_styles_theme__WEBPACK_IMPORTED_MODULE_10__["default"].palette.primary.main
+      content: _components_styles_theme__WEBPACK_IMPORTED_MODULE_11__["default"].palette.primary.main
     }), __jsx("link", {
       rel: "stylesheet",
       href: "https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap"
-    })), __jsx("body", null, __jsx(next_document__WEBPACK_IMPORTED_MODULE_8__["Main"], null), __jsx(next_document__WEBPACK_IMPORTED_MODULE_8__["NextScript"], null)));
+    })), __jsx("body", null, __jsx(next_document__WEBPACK_IMPORTED_MODULE_9__["Main"], null), __jsx(next_document__WEBPACK_IMPORTED_MODULE_9__["NextScript"], null)));
   }
 
 }
 
 MyDocument.getInitialProps = async ctx => {
-  const sheets = new _material_ui_styles__WEBPACK_IMPORTED_MODULE_9__["ServerStyleSheets"]();
+  const sheets = new _material_ui_styles__WEBPACK_IMPORTED_MODULE_10__["ServerStyleSheets"]();
   const originalRenderPage = ctx.renderPage;
 
   ctx.renderPage = () => originalRenderPage({
     enhanceApp: App => props => sheets.collect(__jsx(App, props))
   });
 
-  const initialProps = await next_document__WEBPACK_IMPORTED_MODULE_8___default.a.getInitialProps(ctx);
+  const initialProps = await next_document__WEBPACK_IMPORTED_MODULE_9___default.a.getInitialProps(ctx);
   return _objectSpread({}, initialProps, {
     styles: [...react__WEBPACK_IMPORTED_MODULE_7___default.a.Children.toArray(initialProps.styles), sheets.getStyleElement()]
   });
@@ -1780,6 +1783,17 @@ module.exports = require("prop-types");
 /***/ (function(module, exports) {
 
 module.exports = require("react");
+
+/***/ }),
+
+/***/ "react-router-dom":
+/*!***********************************!*\
+  !*** external "react-router-dom" ***!
+  \***********************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = require("react-router-dom");
 
 /***/ }),
 

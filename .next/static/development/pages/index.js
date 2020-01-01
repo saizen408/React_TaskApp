@@ -465,21 +465,27 @@ var styles = function styles(theme) {
       marginLeft: "auto",
       marginRight: "auto"
     }),
-    paper: {
-      marginTop: theme.spacing(8),
+    paper: Object(_babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_0__["default"])({
+      marginTop: theme.spacing(5),
       display: "flex",
       flexDirection: "column",
       alignItems: "center",
       padding: "".concat(theme.spacing(2), "px ").concat(theme.spacing(3), "px ").concat(theme.spacing(2), "px")
-    },
-    avatar: {
-      margin: theme.spacing(1),
+    }, theme.breakpoints.up("sm"), {
+      marginTop: theme.spacing(8)
+    }),
+    avatar: Object(_babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_0__["default"])({
+      margin: theme.spacing(0),
       backgroundColor: theme.palette.secondary.main
-    },
-    form: {
+    }, theme.breakpoints.up("sm"), {
+      marginTop: theme.spacing(1)
+    }),
+    form: Object(_babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_0__["default"])({
       width: "100%",
+      marginTop: theme.spacing(-1)
+    }, theme.breakpoints.up("sm"), {
       marginTop: theme.spacing(3)
-    },
+    }),
     submit: {
       marginTop: theme.spacing(3)
     },

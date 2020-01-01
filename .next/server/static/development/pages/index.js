@@ -522,19 +522,28 @@ const styles = theme => ({
     }
   },
   paper: {
-    marginTop: theme.spacing(8),
+    marginTop: theme.spacing(5),
     display: "flex",
     flexDirection: "column",
     alignItems: "center",
-    padding: `${theme.spacing(2)}px ${theme.spacing(3)}px ${theme.spacing(2)}px`
+    padding: `${theme.spacing(2)}px ${theme.spacing(3)}px ${theme.spacing(2)}px`,
+    [theme.breakpoints.up("sm")]: {
+      marginTop: theme.spacing(8)
+    }
   },
   avatar: {
-    margin: theme.spacing(1),
-    backgroundColor: theme.palette.secondary.main
+    margin: theme.spacing(0),
+    backgroundColor: theme.palette.secondary.main,
+    [theme.breakpoints.up("sm")]: {
+      marginTop: theme.spacing(1)
+    }
   },
   form: {
     width: "100%",
-    marginTop: theme.spacing(3)
+    marginTop: theme.spacing(-1),
+    [theme.breakpoints.up("sm")]: {
+      marginTop: theme.spacing(3)
+    }
   },
   submit: {
     marginTop: theme.spacing(3)

@@ -1,20 +1,12 @@
 {
-  "name": "saizen408.github.io",
-  "homepage": "https://saizen408.github.io/React_TaskApp",
+  "name": "first-next",
   "version": "1.0.0",
-  "private": true,
   "description": "",
-  "main": "out/index.html",
+  "main": "index.js",
   "scripts": {
-    "dev": "next",
+    "dev": "node server2.js",
     "build": "next build",
-    "start": "next start",
-    "export": "next export",
-    "deploy": "rm -rf node_modules/.cache && rimraf out && next build && next export && touch out/.nojekyll && git add out/ && git commit -m \"Deploy to master from source\" && git subtree push --prefix out origin master"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/saizen408/React_TaskApp"
+    "start": "NODE_ENV=production node server2.js"
   },
   "keywords": [],
   "author": "",
@@ -34,6 +26,7 @@
     "react": "^16.12.0",
     "react-cookie": "^4.0.3",
     "react-dom": "^16.12.0",
+    "react-router-dom": "^5.1.2",
     "react-sortable-hoc": "^1.10.1",
     "uuid": "^3.3.3"
   },

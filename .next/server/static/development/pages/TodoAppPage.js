@@ -88,7 +88,7 @@ module.exports =
 /******/
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 3);
+/******/ 	return __webpack_require__(__webpack_require__.s = 5);
 /******/ })
 /************************************************************************/
 /******/ ({
@@ -110,27 +110,30 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _EditTodoForm__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./EditTodoForm */ "./components/EditTodoForm.js");
 /* harmony import */ var _material_ui_core_ListItemText__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @material-ui/core/ListItemText */ "@material-ui/core/ListItemText");
 /* harmony import */ var _material_ui_core_ListItemText__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_material_ui_core_ListItemText__WEBPACK_IMPORTED_MODULE_4__);
-/* harmony import */ var _material_ui_core_ListItem__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @material-ui/core/ListItem */ "@material-ui/core/ListItem");
-/* harmony import */ var _material_ui_core_ListItem__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(_material_ui_core_ListItem__WEBPACK_IMPORTED_MODULE_5__);
-/* harmony import */ var _material_ui_core_IconButton__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! @material-ui/core/IconButton */ "@material-ui/core/IconButton");
-/* harmony import */ var _material_ui_core_IconButton__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(_material_ui_core_IconButton__WEBPACK_IMPORTED_MODULE_6__);
-/* harmony import */ var _material_ui_icons_Delete__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! @material-ui/icons/Delete */ "@material-ui/icons/Delete");
-/* harmony import */ var _material_ui_icons_Delete__WEBPACK_IMPORTED_MODULE_7___default = /*#__PURE__*/__webpack_require__.n(_material_ui_icons_Delete__WEBPACK_IMPORTED_MODULE_7__);
-/* harmony import */ var _material_ui_icons_Edit__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! @material-ui/icons/Edit */ "@material-ui/icons/Edit");
-/* harmony import */ var _material_ui_icons_Edit__WEBPACK_IMPORTED_MODULE_8___default = /*#__PURE__*/__webpack_require__.n(_material_ui_icons_Edit__WEBPACK_IMPORTED_MODULE_8__);
-/* harmony import */ var _material_ui_core_Switch__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! @material-ui/core/Switch */ "@material-ui/core/Switch");
-/* harmony import */ var _material_ui_core_Switch__WEBPACK_IMPORTED_MODULE_9___default = /*#__PURE__*/__webpack_require__.n(_material_ui_core_Switch__WEBPACK_IMPORTED_MODULE_9__);
-/* harmony import */ var notistack__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! notistack */ "notistack");
-/* harmony import */ var notistack__WEBPACK_IMPORTED_MODULE_10___default = /*#__PURE__*/__webpack_require__.n(notistack__WEBPACK_IMPORTED_MODULE_10__);
-/* harmony import */ var _material_ui_core_ListItemSecondaryAction__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! @material-ui/core/ListItemSecondaryAction */ "@material-ui/core/ListItemSecondaryAction");
-/* harmony import */ var _material_ui_core_ListItemSecondaryAction__WEBPACK_IMPORTED_MODULE_11___default = /*#__PURE__*/__webpack_require__.n(_material_ui_core_ListItemSecondaryAction__WEBPACK_IMPORTED_MODULE_11__);
-/* harmony import */ var _contexts_todoscontext__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ./contexts/todoscontext */ "./components/contexts/todoscontext.js");
-/* harmony import */ var _contexts_LanguageContext__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ./contexts/LanguageContext */ "./components/contexts/LanguageContext.js");
-/* harmony import */ var _material_ui_core__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! @material-ui/core */ "@material-ui/core");
-/* harmony import */ var _material_ui_core__WEBPACK_IMPORTED_MODULE_14___default = /*#__PURE__*/__webpack_require__.n(_material_ui_core__WEBPACK_IMPORTED_MODULE_14__);
-/* harmony import */ var moment__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! moment */ "moment");
-/* harmony import */ var moment__WEBPACK_IMPORTED_MODULE_15___default = /*#__PURE__*/__webpack_require__.n(moment__WEBPACK_IMPORTED_MODULE_15__);
-/* harmony import */ var _words__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(/*! ./words */ "./components/words.js");
+/* harmony import */ var _material_ui_icons_DragHandle__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @material-ui/icons/DragHandle */ "@material-ui/icons/DragHandle");
+/* harmony import */ var _material_ui_icons_DragHandle__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(_material_ui_icons_DragHandle__WEBPACK_IMPORTED_MODULE_5__);
+/* harmony import */ var _material_ui_core_ListItem__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! @material-ui/core/ListItem */ "@material-ui/core/ListItem");
+/* harmony import */ var _material_ui_core_ListItem__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(_material_ui_core_ListItem__WEBPACK_IMPORTED_MODULE_6__);
+/* harmony import */ var _material_ui_core_IconButton__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! @material-ui/core/IconButton */ "@material-ui/core/IconButton");
+/* harmony import */ var _material_ui_core_IconButton__WEBPACK_IMPORTED_MODULE_7___default = /*#__PURE__*/__webpack_require__.n(_material_ui_core_IconButton__WEBPACK_IMPORTED_MODULE_7__);
+/* harmony import */ var _material_ui_icons_Delete__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! @material-ui/icons/Delete */ "@material-ui/icons/Delete");
+/* harmony import */ var _material_ui_icons_Delete__WEBPACK_IMPORTED_MODULE_8___default = /*#__PURE__*/__webpack_require__.n(_material_ui_icons_Delete__WEBPACK_IMPORTED_MODULE_8__);
+/* harmony import */ var _material_ui_icons_Edit__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! @material-ui/icons/Edit */ "@material-ui/icons/Edit");
+/* harmony import */ var _material_ui_icons_Edit__WEBPACK_IMPORTED_MODULE_9___default = /*#__PURE__*/__webpack_require__.n(_material_ui_icons_Edit__WEBPACK_IMPORTED_MODULE_9__);
+/* harmony import */ var _material_ui_core_Switch__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! @material-ui/core/Switch */ "@material-ui/core/Switch");
+/* harmony import */ var _material_ui_core_Switch__WEBPACK_IMPORTED_MODULE_10___default = /*#__PURE__*/__webpack_require__.n(_material_ui_core_Switch__WEBPACK_IMPORTED_MODULE_10__);
+/* harmony import */ var notistack__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! notistack */ "notistack");
+/* harmony import */ var notistack__WEBPACK_IMPORTED_MODULE_11___default = /*#__PURE__*/__webpack_require__.n(notistack__WEBPACK_IMPORTED_MODULE_11__);
+/* harmony import */ var _material_ui_core_ListItemSecondaryAction__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! @material-ui/core/ListItemSecondaryAction */ "@material-ui/core/ListItemSecondaryAction");
+/* harmony import */ var _material_ui_core_ListItemSecondaryAction__WEBPACK_IMPORTED_MODULE_12___default = /*#__PURE__*/__webpack_require__.n(_material_ui_core_ListItemSecondaryAction__WEBPACK_IMPORTED_MODULE_12__);
+/* harmony import */ var _styles_DraggableTodoStyles__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ./styles/DraggableTodoStyles */ "./components/styles/DraggableTodoStyles.js");
+/* harmony import */ var _contexts_todoscontext__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! ./contexts/todoscontext */ "./components/contexts/todoscontext.js");
+/* harmony import */ var _contexts_LanguageContext__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! ./contexts/LanguageContext */ "./components/contexts/LanguageContext.js");
+/* harmony import */ var _material_ui_core__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(/*! @material-ui/core */ "@material-ui/core");
+/* harmony import */ var _material_ui_core__WEBPACK_IMPORTED_MODULE_16___default = /*#__PURE__*/__webpack_require__.n(_material_ui_core__WEBPACK_IMPORTED_MODULE_16__);
+/* harmony import */ var moment__WEBPACK_IMPORTED_MODULE_17__ = __webpack_require__(/*! moment */ "moment");
+/* harmony import */ var moment__WEBPACK_IMPORTED_MODULE_17___default = /*#__PURE__*/__webpack_require__.n(moment__WEBPACK_IMPORTED_MODULE_17__);
+/* harmony import */ var _words__WEBPACK_IMPORTED_MODULE_18__ = __webpack_require__(/*! ./words */ "./components/words.js");
 var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 
 
@@ -149,6 +152,14 @@ var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 
 
 
+
+
+const DragHandle = Object(react_sortable_hoc__WEBPACK_IMPORTED_MODULE_1__["SortableHandle"])(() => __jsx("span", null, __jsx(_material_ui_icons_DragHandle__WEBPACK_IMPORTED_MODULE_5___default.a, {
+  color: "action",
+  style: {
+    marginLeft: "7px"
+  }
+})));
 const DraggableTodo = Object(react_sortable_hoc__WEBPACK_IMPORTED_MODULE_1__["SortableElement"])(({
   _id,
   description,
@@ -157,34 +168,36 @@ const DraggableTodo = Object(react_sortable_hoc__WEBPACK_IMPORTED_MODULE_1__["So
   sorted,
   tasksDBIdx
 }) => {
-  const dispatch = Object(react__WEBPACK_IMPORTED_MODULE_0__["useContext"])(_contexts_todoscontext__WEBPACK_IMPORTED_MODULE_12__["DispatchContext"]);
+  const dispatch = Object(react__WEBPACK_IMPORTED_MODULE_0__["useContext"])(_contexts_todoscontext__WEBPACK_IMPORTED_MODULE_14__["DispatchContext"]);
   const {
     language
-  } = Object(react__WEBPACK_IMPORTED_MODULE_0__["useContext"])(_contexts_LanguageContext__WEBPACK_IMPORTED_MODULE_13__["LanguageContext"]);
+  } = Object(react__WEBPACK_IMPORTED_MODULE_0__["useContext"])(_contexts_LanguageContext__WEBPACK_IMPORTED_MODULE_15__["LanguageContext"]);
   const [isEditing, toggle] = Object(_hooks_useToggleState__WEBPACK_IMPORTED_MODULE_2__["default"])(false);
   const {
     enqueueSnackbar
-  } = Object(notistack__WEBPACK_IMPORTED_MODULE_10__["useSnackbar"])();
+  } = Object(notistack__WEBPACK_IMPORTED_MODULE_11__["useSnackbar"])();
   const {
     lastUpdated
-  } = _words__WEBPACK_IMPORTED_MODULE_16__["words"][language];
+  } = _words__WEBPACK_IMPORTED_MODULE_18__["words"][language];
+  const classes = Object(_styles_DraggableTodoStyles__WEBPACK_IMPORTED_MODULE_13__["default"])();
 
   const handleDeleteClick = () => {
     enqueueSnackbar(`❌ Deleted Task: "${description}"`);
   };
 
   const handleToggleClick = () => {
-    enqueueSnackbar(`Good work! 💪 Task: "${description}" completed!`);
+    enqueueSnackbar(`Good work! 👍 Task: "${description}" completed!`);
   };
 
   const formatedDate = () => {
-    moment__WEBPACK_IMPORTED_MODULE_15___default.a.locale(language);
-    return moment__WEBPACK_IMPORTED_MODULE_15___default()(updatedAt).format("lll");
+    moment__WEBPACK_IMPORTED_MODULE_17___default.a.locale(language);
+    return moment__WEBPACK_IMPORTED_MODULE_17___default()(updatedAt).format("l LT");
   };
 
-  return __jsx(_material_ui_core__WEBPACK_IMPORTED_MODULE_14__["Paper"], {
-    elevation: 3
-  }, __jsx(_material_ui_core_ListItem__WEBPACK_IMPORTED_MODULE_5___default.a, {
+  return __jsx(_material_ui_core__WEBPACK_IMPORTED_MODULE_16__["Paper"], {
+    elevation: 3,
+    className: classes.paper
+  }, __jsx(DragHandle, null), __jsx(_material_ui_core_ListItem__WEBPACK_IMPORTED_MODULE_6___default.a, {
     style: {
       height: "65px"
     },
@@ -195,7 +208,7 @@ const DraggableTodo = Object(react_sortable_hoc__WEBPACK_IMPORTED_MODULE_1__["So
     sorted: sorted,
     description: description,
     toggleEditForm: toggle
-  }) : __jsx(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, __jsx(_material_ui_core_Switch__WEBPACK_IMPORTED_MODULE_9___default.a, {
+  }) : __jsx(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, __jsx(_material_ui_core_Switch__WEBPACK_IMPORTED_MODULE_10___default.a, {
     tabIndex: -1,
     onChange: () => {
       sorted({
@@ -212,7 +225,6 @@ const DraggableTodo = Object(react_sortable_hoc__WEBPACK_IMPORTED_MODULE_1__["So
         });
       }
 
-      console.log(completed);
       completed ? null : handleToggleClick();
     },
     checked: completed
@@ -221,8 +233,14 @@ const DraggableTodo = Object(react_sortable_hoc__WEBPACK_IMPORTED_MODULE_1__["So
       textDecoration: completed ? "line-through" : "none"
     },
     primary: description,
-    secondary: `${lastUpdated}: ${formatedDate()}`
-  }), __jsx(_material_ui_core_ListItemSecondaryAction__WEBPACK_IMPORTED_MODULE_11___default.a, null, __jsx(_material_ui_core_IconButton__WEBPACK_IMPORTED_MODULE_6___default.a, {
+    secondary: __jsx(_material_ui_core__WEBPACK_IMPORTED_MODULE_16__["Typography"], {
+      variant: "caption",
+      display: "block",
+      className: classes.secondaryTxt
+    }, lastUpdated, " ", formatedDate())
+  }), __jsx(_material_ui_core_ListItemSecondaryAction__WEBPACK_IMPORTED_MODULE_12___default.a, null, __jsx(_material_ui_core_IconButton__WEBPACK_IMPORTED_MODULE_7___default.a, {
+    className: classes.removeBtn // style={{ marginBottom: 15 }}
+    ,
     "aria-label": "Delete",
     onClick: () => {
       sorted({
@@ -239,10 +257,12 @@ const DraggableTodo = Object(react_sortable_hoc__WEBPACK_IMPORTED_MODULE_1__["So
 
       handleDeleteClick();
     }
-  }, __jsx(_material_ui_icons_Delete__WEBPACK_IMPORTED_MODULE_7___default.a, null)), __jsx(_material_ui_core_IconButton__WEBPACK_IMPORTED_MODULE_6___default.a, {
+  }, __jsx(_material_ui_icons_Delete__WEBPACK_IMPORTED_MODULE_8___default.a, null)), __jsx(_material_ui_core_IconButton__WEBPACK_IMPORTED_MODULE_7___default.a, {
+    className: classes.editBtn // style={{ marginBottom: 15 }}
+    ,
     "aria-label": "Edit",
     onClick: toggle
-  }, __jsx(_material_ui_icons_Edit__WEBPACK_IMPORTED_MODULE_8___default.a, null))), " ")));
+  }, __jsx(_material_ui_icons_Edit__WEBPACK_IMPORTED_MODULE_9___default.a, null))), " ")));
 });
 /* harmony default export */ __webpack_exports__["default"] = (Object(react__WEBPACK_IMPORTED_MODULE_0__["memo"])(DraggableTodo));
 
@@ -545,10 +565,9 @@ class TodoList extends react__WEBPACK_IMPORTED_MODULE_7__["PureComponent"] {
         tasks,
         prevArr
       } = this.state;
-      console.log("before sort: ", prevArr);
 
       if (prevArr.length === 0) {
-        var arr = cookies.get("tasks"); //if prevArr is same size as state.tasks change nothing
+        var arr = cookies.get("tasks") || this.props.posts; //if prevArr is same size as state.tasks change nothing
       } else if (prevArr.length === tasks.length) {
         var arr = prevArr; //if prev arr is smaller than state.tasks push the new element to the end
       } else if (prevArr.length < tasks.length) {
@@ -567,11 +586,10 @@ class TodoList extends react__WEBPACK_IMPORTED_MODULE_7__["PureComponent"] {
 
       arr = arr.slice();
       arr.splice(newIndex < 0 ? arr.length + newIndex : newIndex, 0, arr.splice(oldIndex, 1)[0]);
-      console.log("after sort: ", arr);
       this.setState({
         tasks: arr,
         prevArr: arr
-      }, cookies.set("tasks", this.state.tasks), console.log("ping!!!"), this.props.sortedContext.updateState = false);
+      }, cookies.set("tasks", this.state.tasks), this.props.sortedContext.updateState = false);
     });
 
     this.state = {
@@ -582,7 +600,6 @@ class TodoList extends react__WEBPACK_IMPORTED_MODULE_7__["PureComponent"] {
 
   componentDidUpdate(prevState) {
     if (prevState.tasks !== this.state.tasks) {
-      console.log("comp did update, set tasks!");
       cookies.set("tasks", this.state.tasks);
     } // if (this.state.tasks.length === 1) {
     //   let firstId = cookies.get("taskId");
@@ -606,7 +623,6 @@ class TodoList extends react__WEBPACK_IMPORTED_MODULE_7__["PureComponent"] {
         id,
         todo
       } = props.sortedContext.type;
-      console.log("props.sortedContext: ", id);
       const {
         tasks
       } = state; // const taskId = cookies.get("taskId");
@@ -669,7 +685,7 @@ class TodoList extends react__WEBPACK_IMPORTED_MODULE_7__["PureComponent"] {
     } = this.state;
     if (tasks.length) return __jsx(_DraggableTodoList__WEBPACK_IMPORTED_MODULE_8__["default"], {
       axis: "y",
-      distance: 20,
+      useDragHandle: true,
       onSortEnd: this.onSortEnd,
       posts: tasks,
       tasksDB: posts,
@@ -963,7 +979,6 @@ function useDBReducer(defaultVal, todoReducer) {
 
     return val;
   });
-  console.log(state);
   return [state, dispatch];
 }
 
@@ -1142,6 +1157,97 @@ const todoReducer = async (state, action) => {
 };
 
 /* harmony default export */ __webpack_exports__["default"] = (todoReducer);
+
+/***/ }),
+
+/***/ "./components/styles/DraggableTodoStyles.js":
+/*!**************************************************!*\
+  !*** ./components/styles/DraggableTodoStyles.js ***!
+  \**************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _material_ui_core_styles__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @material-ui/core/styles */ "@material-ui/core/styles");
+/* harmony import */ var _material_ui_core_styles__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_material_ui_core_styles__WEBPACK_IMPORTED_MODULE_1__);
+
+
+const styles = Object(_material_ui_core_styles__WEBPACK_IMPORTED_MODULE_1__["makeStyles"])(theme => ({
+  paper: {
+    // marginTop: theme.spacing(5),
+    display: "flex",
+    flexDirection: "row",
+    alignItems: "center" // padding: `${theme.spacing(2)}px ${theme.spacing(3)}px ${theme.spacing(2)}px`
+    // [theme.breakpoints.up("sm")]: {
+    //   marginTop: theme.spacing(8)
+    // }
+
+  },
+  removeBtn: {
+    marginBottom: theme.spacing(2),
+    [theme.breakpoints.up("sm")]: {
+      marginBottom: theme.spacing(0)
+    }
+  },
+  editBtn: {
+    marginBottom: theme.spacing(2),
+    [theme.breakpoints.up("sm")]: {
+      marginBottom: theme.spacing(0)
+    },
+    secondaryTxt: {// width: "20%"
+    }
+  } // avatar: {
+  //   margin: theme.spacing(0),
+  //   backgroundColor: theme.palette.secondary.main,
+  //   [theme.breakpoints.up("sm")]: {
+  //     marginTop: theme.spacing(1)
+  //   }
+  // },
+  // form: {
+  //   width: "100%",
+  //   marginTop: theme.spacing(-1),
+  //   [theme.breakpoints.up("sm")]: {
+  //     marginTop: theme.spacing(3)
+  //   }
+  // },
+  // submit: {
+  //   marginTop: theme.spacing(3)
+  // },
+  // loader: {
+  //   display: "flex",
+  //   alignItems: "center",
+  //   justifyContent: "center",
+  //   marginTop: theme.spacing(10)
+  // },
+  // success: {
+  //   backgroundColor: green[600]
+  // },
+  // error: {
+  //   backgroundColor: theme.palette.error.dark
+  // },
+  // info: {
+  //   backgroundColor: theme.palette.primary.main
+  // },
+  // warning: {
+  //   backgroundColor: amber[700]
+  // },
+  // icon: {
+  //   fontSize: 20
+  // },
+  // iconVariant: {
+  //   opacity: 0.9,
+  //   marginRight: theme.spacing(1)
+  // },
+  // message: {
+  //   display: "flex",
+  //   alignItems: "center"
+  // }
+
+}));
+/* harmony default export */ __webpack_exports__["default"] = (styles);
 
 /***/ }),
 
@@ -1513,7 +1619,7 @@ TodoAppPage.getInitialProps = async ctx => {
 
 /***/ }),
 
-/***/ 3:
+/***/ 5:
 /*!************************************!*\
   !*** multi ./pages/TodoAppPage.js ***!
   \************************************/
@@ -1654,6 +1760,17 @@ module.exports = require("@material-ui/core/styles");
 /***/ (function(module, exports) {
 
 module.exports = require("@material-ui/icons/Delete");
+
+/***/ }),
+
+/***/ "@material-ui/icons/DragHandle":
+/*!************************************************!*\
+  !*** external "@material-ui/icons/DragHandle" ***!
+  \************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = require("@material-ui/icons/DragHandle");
 
 /***/ }),
 
