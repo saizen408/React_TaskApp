@@ -4,9 +4,7 @@ Next.js Task app that allows Create/Edit/Save/Sort tasks via drag-and-drop
 
 Dark Mode and Language Settings:
 
-
-[!Imgur Image](https://i.imgur.com/TCukA0I.gifv)
-<img src="https://imgur.com/TCukA0I.gifv" width="500 />
+![Imgur](https://imgur.com/RcTE5gj)
 
 Drag and Drop tasks: 
 
